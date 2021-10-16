@@ -1,0 +1,45 @@
+.createAccount {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CreateAccountForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.CreateAccountForm input{
+    margin: 5px;
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+    
+}
+.CreateAccountForm lablel{
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+.CreateAccountForm button{
+    margin: 5px;
+    width: 410px;
+    height: 30px;
+    font-size: 15px;
+    
+}
+
+.CreateAccountForm button:hover{
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+}
