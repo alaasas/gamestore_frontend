@@ -6,11 +6,6 @@ function CreateAccount() {
   const [userFullName, setUserFullname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //var config = require('cors')
-  /*var config = {headers: {'Access-Control-Allow-Origin': '*'},	proxy: {
-	  host: '104.236.174.88',
-	  port: 3128
-	}};*/
 
   const createAccount = () => {
     console.log(userFullName);
@@ -26,7 +21,7 @@ function CreateAccount() {
     {
       alert("User password cannot be empty")
     }
-    //url-> Need to be updated
+
     Axios.post("http://localhost:8081/demo_war_exploded/PostUsers", {
       fullname: userFullName,
       password: password,
