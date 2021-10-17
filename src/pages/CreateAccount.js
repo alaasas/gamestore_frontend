@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import "./createaccount.css";
 import Axios from "axios";
 
+/*CreateAccount(): 
+  keep a state of three variable: userFullName, password, emailid
+  Alter the user to not leave any field empty.
+  use Axios to post the user's info. into the backend.
+  */
 function CreateAccount() {
   const [userFullName, setUserFullname] = useState("");
   const [email, setEmail] = useState("");
@@ -9,16 +14,13 @@ function CreateAccount() {
 
   const createAccount = () => {
     console.log(userFullName);
-    if(userFullName === "")
-    {
+    if (userFullName === "") {
       alert("User full name cannot be empty")
     }
-    if(email === "")
-    {
+    if (email === "") {
       alert("User email cannot be empty")
     }
-    if(password === "")
-    {
+    if (password === "") {
       alert("User password cannot be empty")
     }
 
@@ -28,10 +30,10 @@ function CreateAccount() {
       emailid: email
     }).then((response) => {
       console.log(response.data);
-      if((response.data.localeCompare("Successfully Inserted")) != -1 ){
+      if ((response.data.localeCompare("Successfully Inserted")) != -1) {
         alert(response.data);
-        window.location.href="http://localhost:3000/login"; 
-      } else{
+        window.location.href = "http://localhost:3000/login";
+      } else {
         alert(response.data);
       }
     }).catch(e => {

@@ -1,5 +1,8 @@
 import React from "react";
 import "./Home.css";
+
+/*Home():is a welcom page*/
+
 const Home = () => {
   return (
     <div className="Home">

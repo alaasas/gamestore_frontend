@@ -1,5 +1,7 @@
 import React from "react";
 import "./login.css";
+
+/* login(): is page for login process. */
 const login = () => {
   return (
     <div className="login">
