@@ -8,6 +8,10 @@ import login from "./pages/login";
 import Store from "./pages/Store";
 import Home from "../src/pages/Home";
 
+/*
+  App(): is container for all pages. 
+  by using switch method, we are able to navigate btween pages.
+*/
 function App() {
   return (
     <Router>
