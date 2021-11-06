@@ -12,8 +12,10 @@ function Popup9(props) {
                 console.log(res)
             })
     }
-    const gameId= games.map(a => a.gameId);
-    const gameName= games.map(a => a.gameName);
+    const gameSummary= games.map(a => a.summary);
+    const gameDevelopers= games.map(a => a.developers);
+    const gamePrice= games.map(a => a.price);
+    const gameGenres= games.map(a => a.genres);
     return (props.trigger) ? (
         <div className="popup" >
             <div className="popup-inner">
@@ -23,10 +25,10 @@ function Popup9(props) {
                 
                 <center><button className="view-btn" onClick={gamescontent}>Click to View Game Details </button></center>
                 <h3 className="des-header">Description</h3>
-                <h4>Summary: {gameId[8]}</h4>
-                <h4>Developers: {gameName[8]}</h4>
-                <h4>Genres</h4>
-                <h4>Price(Monthly):</h4>
+                <h4 className="des-content">Summary: <i> {gameSummary[8]}</i></h4>
+                <h4 className="des-content">Developers: {gameDevelopers[8]}</h4>
+                <h4 className="des-content">Genres: {gameGenres[8]}</h4>
+                <h4 className="des-content" >Price(Monthly):$ {gamePrice[8]}</h4>
                 <div>
                 <br></br><br></br>
                 <input type="image" name="img-btn" className="icon-btn" src={image}  alt="icon"></input>

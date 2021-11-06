@@ -15,7 +15,7 @@
     position: fixed;
     padding: 32px;
     width: 600px;
-    height:600px;
+    height:620px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -54,7 +54,7 @@
   }
   /*Image in popup-inner*/
 .popup-inner img{     
-  filter: brightness(130%);
+  filter: brightness(110%);
     width: 200px;
     height: 200px;
     align-self: center;
@@ -91,3 +91,10 @@
   font-style:Underline; 
   filter: brightness(130%);
 }
+
+.des-content{  
+  font-weight: normal;
+  filter: brightness(130%);
+}
+
+
