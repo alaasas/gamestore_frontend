@@ -45,3 +45,15 @@ h1 {
     font-style: italic;
 
 }
+.HomeImges img{
+    margin-left: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 200px;
+}
+.HomeImges img:hover{
+    
+    filter: brightness(130%);
+    transform: scale(1.03);
+    cursor: pointer;
+}

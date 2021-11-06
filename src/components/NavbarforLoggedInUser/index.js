@@ -8,7 +8,7 @@ NavBtn,
 NavBtnLink,
 } from './NavbarElements';
 
-const Navbar = () => {
+const NavbarforLoggedInUser = () => {
 return (
 	<>
 	<Nav>
@@ -21,16 +21,16 @@ return (
 		<NavLink to='/createaccount' >
 			Create Account
 		</NavLink>
-		<NavLink to='/Store' >
-			Store
+		<NavLink to='/' >
+			Hi User!
 		</NavLink>
 		</NavMenu>
 		<NavBtn>
-		<NavBtnLink to='/login' >Log In</NavBtnLink>
+		<NavBtnLink to='/' >Log Out</NavBtnLink>
 		</NavBtn>
 	</Nav>
 	</>
 );
 };
 
-export default Navbar;
+export default NavbarforLoggedInUser;
