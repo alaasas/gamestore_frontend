@@ -21,9 +21,6 @@ return (
 		<NavLink to='/createaccount' >
 			Create Account
 		</NavLink>
-		<NavLink to='/Store' >
-			Store
-		</NavLink>
 		</NavMenu>
 		<NavBtn>
 		<NavBtnLink to='/login' >Log In</NavBtnLink>
